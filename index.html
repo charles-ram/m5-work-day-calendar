@@ -10,6 +10,7 @@
         rel="stylesheet" 
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
         crossorigin="anonymous">
+    
     <script 
         src="https://kit.fontawesome.com/240a9fc671.js" 
         crossorigin="anonymous"></script>
@@ -26,7 +27,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="d-flex flex-row justify-content-end" id="social-links">
+        <div class="d-flex flex-row justify-content-end me-3" id="social-links">
             <ul>
               <li class="list-inline-item"><i class="fa-brands fa-instagram"></i>   <a class="anchor-tag-style" href="https://www.instagram.com/">@charles_ram</a></li>
               <li class="list-inline-item"><i class="fa-brands fa-github"></i>   <a class="anchor-tag-style" href="https://github.com/charles-ram">charles-ram</a></li>
@@ -36,55 +37,59 @@
         <div class="d-flex flex-row justify-content-center" id="title">
             <h1>Work Day Scheduler</h1>
         </div>
-        <div class="d-flex"></div>
+        <div class="d-flex flex-row justify-content-center">Display current date here.</div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2" id="9am">9 am</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+    
+    <div class="container-fluid mt-5" id="schedule-table">
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="9am">9 am</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control" placeholder="Enter event in the box"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">10 am</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="10am">10 am</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">11 am</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="11am">11 am</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">12 am</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="12pm">12 am</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">1 pm</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="1pm">1 pm</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">2 pm</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="2pm">2 pm</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">3 pm</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="3pm">3 pm</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">4 pm</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="4pm">4 pm</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>
-        <div class="row">
-            <div class="col-2" id="9am">5 pm</div>
-            <div class="col-8" id="event-input">insert event here</div>
-            <div class="col-2" id="save">save</div>
+        <div class="row mx-1">
+            <div class="col-2 border" style="text-align:end" id="5pm">5 pm</div>
+            <div class="col-8 border" id="event-input"><textarea class="form-control"></textarea></div>
+            <div class="col-2 border" style="text-align: center;" id="save">save</div>
         </div>  
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+        crossorigin="anonymous"></script>
 </body>
 </html>
